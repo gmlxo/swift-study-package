@@ -26,26 +26,38 @@ var string: String = "ABC"
 // var _ 자동 구분
 var all = "all"
 
-//array
-
-/* List */
+/* array */
+// List
 var n: Int = 0
 var nStr: String = "test"
 
-/* arrayList */
+// arrayList
 var list: Array<String> = Array<String>()
 var list_축약: [String] = []
 list.append(nStr) // list 마지막에 nStr이란 값을 넣는다.
 list[n] // n번째의 값을 본다.
 list.remove(at: n) // n번째 값을 지운다.
 
-/* Dictionary */
+// Dictionary
 var dicList:  [String: Int] = [:]
 dicList[nStr] = n // nStr 이라는 키 안에 n 이라는 값을 넣는다
 dicList.removeValue(forKey: nStr) // nStr 이라는 키 값을 지운다
 
-/* set */
+// set
 var setList: Set = Set<Int>() // 순서 x, 값은 들어감 x
 setList.insert(n) // n 값을 넣는다.
 setList.remove(n) // n 값을 지운다.
+
+/* 함수 */
+// 반환값 있게
+func sum(a: Int, b: Int) -> Int { // int로 반환하겠다.
+    return a+b // a + b 로 반환
+}
+
+func str() -> String { // String 로 반환하겠다.
+    return "Hello Word!" // Hello Word! 로 반환
+}
+
+sum(a: 1, b: 2)
+str()
 
